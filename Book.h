@@ -15,6 +15,9 @@ public:
   Book(int id, int score);
   int getScore();
   int getId();
+  bool operator<(const Book &other) const {
+    return score < other.score;
+  }
 };
 
 #endif // GOOGLE_HASH_CODE_BOOK_H

@@ -30,6 +30,7 @@ public:
   int getNbooks();
   int getNLibraries();
   int getNDays();
+  void removeLibrary(int id);
 
 };
 

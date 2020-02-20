@@ -19,9 +19,10 @@ std::string Database::toString() {
   }
   tmp += "\nLibraries: ";
   for (auto &v : this->libraries) {
-    tmp += "{" + std::to_string(v.getId()) + "," + std::to_string(v.getNBooks()) +  "} ";
+    tmp += "{" + std::to_string(v.getId()) + "," +
+           std::to_string(v.getNBooks()) + "} ";
   }
-  tmp +="\n}";
+  tmp += "\n}";
   return tmp;
 }
 std::vector<Library> &Database::getLibraries() { return this->libraries; }
@@ -32,7 +33,12 @@ int Database::getNLibraries() { return this->nLibraries; }
 void Database::setNBooks(int nBooks) { this->nBooks = nBooks; }
 void Database::setNLibrary(int nLibraries) { this->nLibraries = nLibraries; }
 void Database::setNDays(int nDays) { this->nDays = nDays; }
-void Database::addBook(Book &book) { this->books.emplace_back(book); }
+void Database::addBook(Book &book) {
+  this->books.emplace_back(book);
+}
 void Database::addLibrary(Library &library) {
   this->libraries.emplace_back(library);
+}
+void Database::removeLibrary(int id) {
+  this->libraries.erase(this->libraries.begin(), this->libraries.begin() + id);
 }

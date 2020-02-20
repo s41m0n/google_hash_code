@@ -5,13 +5,20 @@
 #include <fstream>
 #include <mutex>
 #include "Database.h"
+#include "Database.h"
 
 class GeneticAlgorithm {
 
+private:
+  float GLOBAL_MEAN = 0.5;
+  void computeScoreOfAllLibraries(Database &db);
+  void sortLibrariesBySignUp(Database &db);
+  float computeMediumScoreForLibraries(Database &db);
+  Library findCandidateLibrary(Database &db);
+
 public:
-    void computeSoreOfAllLibraries(std::vector<Library> &libraries);
-    std::vector<Library> sortLibrariesBySignUp(std::vector<Library> &libraries);
-    float computeMediumScoreForLibraries(std::vector<Library> &libraries);
+  GeneticAlgorithm();
+  void start(Database &db);
 
 };
 
