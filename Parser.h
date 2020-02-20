@@ -16,7 +16,7 @@ public:
 
 private:
   std::string line;
-  std::regex myRegex;
+  std::stringstream ss;
 };
 
 #endif // GOOGLE_HASH_CODE_PARSER_H
