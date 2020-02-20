@@ -51,7 +51,6 @@ void Parser::parse(std::string &filename, Database &db) {
       for (int j = 1; j <= nBooks; j++) {
         std::getline(ss, line, ' ');
         library.addBook(db.getBooks()[std::stoi(line)]);
-        exit(0);
       }
       db.addLibrary(library);
     }

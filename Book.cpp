@@ -8,3 +8,4 @@ Book::Book(int id, int score) : id(id), score(score){}
 int Book::getScore(){
   return this->score;
 }
+int Book::getId() { return this->id; }

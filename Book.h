@@ -14,6 +14,7 @@ private:
 public:
   Book(int id, int score);
   int getScore();
+  int getId();
 };
 
 #endif // GOOGLE_HASH_CODE_BOOK_H

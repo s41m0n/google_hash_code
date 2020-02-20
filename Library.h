@@ -25,6 +25,7 @@ public:
   int getNBooks();
   float getMediumScore();
   void computeScore();
+  int getId();
 };
 
 #endif // GOOGLE_HASH_CODE_LIBRARY_H

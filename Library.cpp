@@ -27,3 +27,4 @@ void Library::computeScore(){
 float Library::getMediumScore(){
   return this->mediumScore;
 }
+int Library::getId() { return this->id; }
