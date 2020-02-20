@@ -16,6 +16,7 @@ private:
   int nBooks;
   int signupProcessDays;
   int shippableBooksPerDay;
+  int score;
   float mediumScore;
   std::vector<Book> books;
 
@@ -24,7 +25,11 @@ public:
   void addBook(Book &book);
   int getNBooks();
   float getMediumScore();
+  void computeMediumScoreForBook();
   void computeScore();
+  bool operator< (const Library &other) const {
+      return signupProcessDays < other.signupProcessDays;
+  }
 };
 
 #endif // GOOGLE_HASH_CODE_LIBRARY_H

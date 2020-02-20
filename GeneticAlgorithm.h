@@ -9,8 +9,9 @@
 class GeneticAlgorithm {
 
 public:
-    void computeSoreOfAllLibraries(std::vector<Library> libraries);
-    std::vector<Library> sortLibrariesBySignUp(std::vector<Library> libraries);
+    void computeSoreOfAllLibraries(std::vector<Library> &libraries);
+    std::vector<Library> sortLibrariesBySignUp(std::vector<Library> &libraries);
+    float computeMediumScoreForLibraries(std::vector<Library> &libraries);
 
 };
 

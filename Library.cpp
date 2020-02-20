@@ -13,7 +13,7 @@ void Library::addBook(Book &book) {
 }
 int Library::getNBooks() { return this->nBooks; }
 
-void Library::computeScore(){
+void Library::computeMediumScoreForBook(){
 	int scoreTot = 0;
 	for (auto & book : this->books){
 		scoreTot += book.getScore();
@@ -26,4 +26,12 @@ void Library::computeScore(){
 
 float Library::getMediumScore(){
   return this->mediumScore;
+}
+
+int Library::computeScore() {
+    int scoreTot = 0;
+    for (auto & book : this->books){
+        scoreTot += book.getScore();
+    }
+    this->score = scoreTot;
 }
