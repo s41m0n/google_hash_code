@@ -4,3 +4,7 @@
 
 #include "Book.h"
 Book::Book(int id, int score) : id(id), score(score){}
+
+int Book::getScore(){
+  return this->score;
+}
