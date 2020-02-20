@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="google_hash_code"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/s41m0n/Desktop/google_hash_code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/s41m0n/Desktop/google_hash_code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="google_hash_code">
+				<Option output="/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/google_hash_code" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/s41m0n/Desktop/google_hash_code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 google_hash_code"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="google_hash_code/fast">
+				<Option output="/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/google_hash_code" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/s41m0n/Desktop/google_hash_code/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/x86_64-pc-linux-gnu"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/../../../../include/c++/9.2.0/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-linux-gnu/9.2.0/include-fixed"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 google_hash_code/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/s41m0n/Desktop/google_hash_code/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/s41m0n/Desktop/google_hash_code/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/s41m0n/Desktop/google_hash_code/Book.cpp">
+			<Option target="google_hash_code"/>
+		</Unit>
+		<Unit filename="/home/s41m0n/Desktop/google_hash_code/Book.h">
+			<Option target="google_hash_code"/>
+		</Unit>
+		<Unit filename="/home/s41m0n/Desktop/google_hash_code/Database.cpp">
+			<Option target="google_hash_code"/>
+		</Unit>
+		<Unit filename="/home/s41m0n/Desktop/google_hash_code/Database.h">
+			<Option target="google_hash_code"/>
+		</Unit>
+		<Unit filename="/home/s41m0n/Desktop/google_hash_code/GeneticAlgorithm.cpp">
+			<Option target="google_hash_code"/>
+		</Unit>
+		<Unit filename="/home/s41m0n/Desktop/google_hash_code/GeneticAlgorithm.h">
+			<Option target="google_hash_code"/>
+		</Unit>
+		<Unit filename="/home/s41m0n/Desktop/google_hash_code/Library.cpp">
+			<Option target="google_hash_code"/>
+		</Unit>
+		<Unit filename="/home/s41m0n/Desktop/google_hash_code/Library.h">
+			<Option target="google_hash_code"/>
+		</Unit>
+		<Unit filename="/home/s41m0n/Desktop/google_hash_code/Parser.cpp">
+			<Option target="google_hash_code"/>
+		</Unit>
+		<Unit filename="/home/s41m0n/Desktop/google_hash_code/Parser.h">
+			<Option target="google_hash_code"/>
+		</Unit>
+		<Unit filename="/home/s41m0n/Desktop/google_hash_code/main.cpp">
+			<Option target="google_hash_code"/>
+		</Unit>
+		<Unit filename="/home/s41m0n/Desktop/google_hash_code/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
