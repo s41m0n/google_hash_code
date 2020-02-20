@@ -14,11 +14,10 @@ void doOnThread(Database *db, int seconds, SharedData *shared, string filename) 
 */
 
 int main(int argc, char *argv[]) {
-  std::cout << "Hello, World!" << std::endl;
   std::string filename(argv[1]);
   Parser parser;
   Database db;
   parser.parse(filename, db);
-  db.toString();
+  std::cout << db.toString() << std::endl;
   return 0;
 }

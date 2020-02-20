@@ -3,9 +3,27 @@
 //
 
 #include "Database.h"
+#include <iostream>
 Database::Database() : libraries(), books() {}
 
-std::string Database::toString() { return std::string(); }
+std::string Database::toString() {
+  std::string tmp;
+  tmp += "Database{"
+         "\nnBooks: " +
+         std::to_string(this->nBooks) +
+         "\nnLibraries: " + std::to_string(this->nLibraries) +
+         "\nnDays: " + std::to_string(this->nDays) + "\nBooks: ";
+  for (auto &v : this->books) {
+    tmp += "{" + std::to_string(v.getId()) + "," +
+           std::to_string(v.getScore()) + "} ";
+  }
+  tmp += "\nLibraries: ";
+  for (auto &v : this->libraries) {
+    tmp += "{" + std::to_string(v.getId()) + "," + std::to_string(v.getNBooks()) +  "} ";
+  }
+  tmp +="\n}";
+  return tmp;
+}
 std::vector<Library> &Database::getLibraries() { return this->libraries; }
 std::vector<Book> &Database::getBooks() { return this->books; }
 int Database::getNbooks() { return this->nBooks; }

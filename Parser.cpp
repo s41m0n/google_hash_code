@@ -6,7 +6,7 @@
 #include "Library.h"
 #include "Parser.h"
 
-Parser::Parser() : myRegex(), line() { this->myRegex = "(\\d+)"; }
+Parser::Parser() : line() {}
 
 void Parser::parse(std::string &filename, Database &db) {
 
@@ -16,32 +16,41 @@ void Parser::parse(std::string &filename, Database &db) {
 
     // Reading 1st line (main parameters)
     getline(file, line);
-    std::regex_search(line, sm, myRegex);
-    db.setNBooks(std::stoi(sm.str(1)));
-    std::regex_search(line, sm, myRegex);
-    db.setNLibrary(std::stoi(sm.str(2)));
-    std::regex_search(line, sm, myRegex);
-    db.setNDays(std::stoi(sm.str(3)));
+    ss = std::stringstream(line);
 
-    exit(0);
+    std::getline(ss, line, ' ');
+    db.setNBooks(std::stoi(line));
+    std::getline(ss, line, ' ');
+    db.setNLibrary(std::stoi(line));
+    std::getline(ss, line, ' ');
+    db.setNDays(std::stoi(line));
+
     // Reading 2nd line (Books & score)
     getline(file, line);
-    std::regex_search(line, sm, myRegex);
+    ss = std::stringstream(line);
     for (int i = 1; i <= db.getNbooks(); i++) {
-      Book book(i - 1, std::stoi(sm.str(i)));
+      std::getline(ss, line, ' ');
+      Book book(i - 1, std::stoi(line));
       db.addBook(book);
     }
 
     // Reading libraries
-    for (int i = 1; i <= db.getNLibraries() * 2; i++) {
+    for (int i = 1; i <= db.getNLibraries(); i++) {
       getline(file, line);
-      std::regex_search(line, sm, myRegex);
-      Library library(std::stoi(sm.str(1)), std::stoi(sm.str(2)),
-                      std::stoi(sm.str(3)));
+      ss = std::stringstream(line);
+      std::getline(ss, line, ' ');
+      int nBooks = std::stoi(line);
+      std::getline(ss, line, ' ');
+      int signupProcessDays = std::stoi(line);
+      std::getline(ss, line, ' ');
+      int shippableBooksPerDay = std::stoi(line);
+
+      Library library(i, signupProcessDays, shippableBooksPerDay);
       getline(file, line);
-      std::regex_search(line, sm, myRegex);
-      for (int j = 1; j <= library.getNBooks(); i++) {
-        library.addBook(db.getBooks()[std::stoi(sm.str(j))]);
+      ss = std::stringstream(line);
+      for (int j = 1; j <= nBooks; j++) {
+        std::getline(ss, line, ' ');
+        library.addBook(db.getBooks()[std::stoi(line)]);
       }
       db.addLibrary(library);
     }

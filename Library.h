@@ -30,6 +30,7 @@ public:
   bool operator< (const Library &other) const {
       return signupProcessDays < other.signupProcessDays;
   }
+  int getId();
 };
 
 #endif // GOOGLE_HASH_CODE_LIBRARY_H

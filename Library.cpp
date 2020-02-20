@@ -28,10 +28,11 @@ float Library::getMediumScore(){
   return this->mediumScore;
 }
 
-int Library::computeScore() {
+void Library::computeScore() {
     int scoreTot = 0;
     for (auto & book : this->books){
         scoreTot += book.getScore();
     }
     this->score = scoreTot;
 }
+int Library::getId() { return this->id; }
