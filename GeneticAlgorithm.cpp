@@ -3,3 +3,14 @@
 //
 
 #include "GeneticAlgorithm.h"
+
+void GeneticAlgorithm::computeSoreOfAllLibraries(std::vector<Library> libraries) {
+  for (auto & library : libraries){
+    library.computeScore();
+  }
+}
+
+std::vector<Library> GeneticAlgorithm::sortLibrariesBySignUp(std::vector<Library> libraries){
+  auto vecLibr = new std::vector<Library>();
+  
+}

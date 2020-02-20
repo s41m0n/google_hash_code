@@ -16,12 +16,15 @@ private:
   int nBooks;
   int signupProcessDays;
   int shippableBooksPerDay;
+  float mediumScore;
   std::vector<Book> books;
 
 public:
   Library(int id, int signupProcessDays, int shippableBooksPerDay);
   void addBook(Book &book);
   int getNBooks();
+  float getMediumScore();
+  void computeScore();
 };
 
 #endif // GOOGLE_HASH_CODE_LIBRARY_H

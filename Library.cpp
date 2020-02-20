@@ -4,7 +4,7 @@
 
 #include "Library.h"
 Library::Library(int id, int signupProcessDays, int shippableBooksPerDay)
-    : id(id), nBooks(0), signupProcessDays(signupProcessDays),
+    : id(id), nBooks(0), mediumScore(0), signupProcessDays(signupProcessDays),
       shippableBooksPerDay(shippableBooksPerDay) {}
 
 void Library::addBook(Book &book) {
@@ -12,3 +12,18 @@ void Library::addBook(Book &book) {
   this->nBooks++;
 }
 int Library::getNBooks() { return this->nBooks; }
+
+void Library::computeScore(){
+	int scoreTot = 0;
+	for (auto & book : this->books){
+		scoreTot += book.getScore();
+	}
+
+	float medScore = (float) scoreTot / this->books.size();
+
+	this->mediumScore = medScore;
+}
+
+float Library::getMediumScore(){
+  return this->mediumScore;
+}
